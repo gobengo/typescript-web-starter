@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# this script is just to easily test building and running this repo in a docker container
+
+source="${BASH_SOURCE[0]}"
+repo_dir="$(dirname $(dirname $(dirname "$source")))"
+docker_tag="$(basename "$source")"
+
+PORT="${PORT:-8000}"
+
+if [ -z "$BUILD" ]; then
+(
+  cd "$repo_dir"
+  docker build -t "$docker_tag" .
+)
+fi
+
+docker run \
+  -v "$(realpath "$repo_dir")/node_modules:/usr/src/app/node_modules" \
+  -e "NODE_ENV=$NODE_ENV" \
+  -e "PORT=$PORT" \
+  -p "$PORT:$PORT" \
+  "$docker_tag" "$@"
