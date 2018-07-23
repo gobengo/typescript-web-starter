@@ -2,6 +2,11 @@
 	"name": "@bengo.co/typescript-web-starter",
 	"version": "1.0.1",
 	"description": "",
+	"homepage": "https://gitlab.ops.bengo.is/ben/typescript-web-starter",
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.ops.bengo.is/ben/typescript-web-starter.git"
+	},
 	"main": "index.js",
 	"scripts": {
 		"dev": "npm run develop",
