@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-microsoft-contrib",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "strict-boolean-expressions": [false, "allow-undefined-union", "allow-string", "allow-mix", "allow-null-union"],
+    "no-unnecessary-local-variable": false,
+    "no-submodule-imports": [true, "@material-ui/core", "@material-ui/icons", "react-dom/server", "history"],
+    "trailing-comma": [true, {
+      "multiline": "always",
+      "singleline": "never"
+    }],
+    "match-default-export-name": false,
+    "export-name": false,
+    "newline-before-return": false,
+    "no-default-export": false,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
+    "interface-name" : [true, "never-prefix"],
+    "typedef": [true, "call-signature", "parameter", "member-variable-declaration"],
+    "no-require-import": false,
+    "no-relative-imports": false,
+    "jsx-boolean-value": [true, "never"],
+    "whitespace": true,
+    "no-irregular-whitespace": true,
+    "no-trailing-whitespace": true,
+    "completed-docs": {
+      "severity": "warning",
+      "options": ["classes", "enums", "functions", "methods"]
+    },
+    "import-name": [true, {}],
+    "prefer-type-cast": false,
+    "no-consecutive-blank-lines": [true, 2],
+    "no-single-line-block-comment": false
+  }
+}
