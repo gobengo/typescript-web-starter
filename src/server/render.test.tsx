@@ -47,7 +47,7 @@ export class TestServerRender {
 		})
 		const redirect = rendered.redirect
     Expect(redirect && typeof redirect.url).toEqual("string");
-		Expect(redirect && redirect.url).toEqual("/apps");
+		Expect(redirect && redirect.url).toEqual("/things");
 		Expect(redirect && redirect.status).toBe(undefined);
   }
 }
