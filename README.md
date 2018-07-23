@@ -9,6 +9,7 @@ Save yourself some time. Launch sooner.
 * [React](https://reactjs.org) for view composition
 * [Material UI](https://material-ui.com/) react components for common UI elements like buttons, grid, etc. Type-checked.
 * client-side state management with [Redux](https://redux.js.org/)
+* web server using [koa](https://koajs.com/)
 * server side rendering (SSR) - Faster apparent page loads + your website will load for end-users without JavaScript.
 * [Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/) - When running the web server with NODE_ENV=development, saving any file (e.g. a React Component) will instantly reload and re-render your app.
 * Testing:
